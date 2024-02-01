@@ -1,0 +1,51 @@
+spring.datasource.url: jdbc:h2:file:./camunda1-h2-database
+
+#spring.datasource.username=medical_new
+#spring.datasource.password=123456
+#spring.datasource.url=jdbc:oracle:thin:@192.168.2.24:1521:orcl
+#spring.datasource.driverClassName=oracle.jdbc.OracleDriver
+#spring.jpa.hibernate.dialect=org.hibernate.dialect.Oracle12cDialect
+
+
+camunda.bpm.admin-user:
+  id: demo
+  password: demo
+#
+#spring:
+#  datasource:
+#    username: bamunda_bpm_testing
+#    password: 123456
+#    url: jdbc:oracle:thin:@192.168.2.24:1521:orcl
+#    driver-class-name: oracle.jdbc.OracleDriver
+#  jpa:
+#    hibernate:
+#      dialect: org.hibernate.dialect.Oracle12cDialect
+#      ddl-auto: none
+
+myCamunda:
+  dataSource:
+    username: sa
+    password: ''
+    url: jdbc:h2:file:./camunda2-h2-database
+    driverClassName: org.h2.Driver
+
+
+#server:
+#  port: 8080
+#
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    driverClassName: org.h2.Driver
+#    username: sa
+#    password: ''
+#  h2:
+#    console:
+#      enabled: true
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    hibernate:
+#      ddl-auto: create-drop
